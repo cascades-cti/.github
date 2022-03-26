@@ -1,0 +1,106 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we contact you if we need more info?
+      placeholder: ex. Alexandre Croteau <alexandre_croteau@cascades.com>
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to reproduce
+      description: Please tell us how to reproduce the bug step by step.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output.
+      render: shell
+
+  - type: dropdown
+    id: recurrence-rating
+    attributes:
+      label: Recurrence rating
+      options:
+        - Some incidents
+        - Several per month
+        - Several per week
+        - Several per day
+    validations:
+      required: false
+
+  - type: dropdown
+    id: support-impact-rating
+    attributes:
+      label: Support impact rating
+      description: Per incident. Includes possible assignments and communications
+      options:
+        - Requires less than 5 minutes to process
+        - Between 5 and 10 minutes
+        - Between 10 and 30 minutes
+        - More than 30 minutes
+    validations:
+      required: false
+
+  - type: dropdown
+    id: number-of-affected-users
+    attributes:
+      label: Number of affected users
+      options:
+        - One user only
+        - A few users in one or more plants
+        - One plant
+        - Multiple plants
+        - A specific group (CEC, CGT, GPS...)
+        - All plant
+    validations:
+      required: false
+
+  - type: dropdown
+    id: business-impact-rating
+    attributes:
+      label: Business impact rating
+      description: Excluding the application of the bypass plan
+      options:
+        - Does not harm operations
+        - Slows down some operations
+        - Prevent certain operations
+    validations:
+      required: false
+
+  - type: dropdown
+    id: bypass-plan-rating
+    attributes:
+      label: Extent of bypass plan
+      description: Number of steps to execute
+      options:
+        - Requires less than 5 minutes to process
+        - Between 5 and 10 minutes
+        - Between 10 and 30 minutes
+        - More than 30 minutes
+    validations:
+      required: false
