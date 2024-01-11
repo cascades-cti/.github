@@ -2,7 +2,7 @@
 
 # Our Company
 
-Founded in 1964, Cascades offers sustainable, innovative and value-added solutions for packaging, hygiene and recovery needs. The company employs approximately 10,000 women and men who work in almost 80 facilities in North America.
+Founded in 1964, Cascades offers sustainable, innovative and value-added solutions for packaging, hygiene and recovery needs.
 
 ## Our Mission
 
